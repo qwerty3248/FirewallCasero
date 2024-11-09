@@ -1,0 +1,16 @@
+
+python firewall.py --crear_zona ZONA
+python firewall.py --crear_regla ORIGEN DESTINO ACCION PUERTO
+python firewall.py --configurar_nat IP_INTERNA IP_EXTERNA
+python firewall.py --simular_trafico ORIGEN_IP DESTINO_IP ORIGEN_ZONA PUERTO
+python firewall.py --ver_logs
+
+
+Ejemplos de uso en terminal
+python firewall.py --crear_zona Interna
+python firewall.py --crear_regla Interna Externa permitir 80
+python firewall.py --configurar_nat 192.168.0.1 203.0.113.1
+python firewall.py --simular_trafico 192.168.0.1 203.0.113.2 Interna Externa 80
+python firewall.py --ver_logs
+
+
